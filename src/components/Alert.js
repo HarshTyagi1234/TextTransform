@@ -2,7 +2,8 @@ import React from "react";
 
 function Alert(props) {
   return (
-    props.alert&&
+    <div style={{height:'50px'}}>
+   { props.alert&&
     <div
       className="alert alert-warning alert-dismissible fade show"
       role="alert"
@@ -10,6 +11,7 @@ function Alert(props) {
       <strong>{props.alert.type}</strong>:{props.alert.msg}
       <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
     
+        </div>}
     </div>
   );
 }
